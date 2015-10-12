@@ -1,0 +1,27 @@
+! Clear defaults
+clear control
+clear shift
+clear mod1
+
+! Use Right Alt (AltGr) as Right Super
+keycode 108 = Super_R
+
+! Use Muhenkan as Left Control
+keycode 102 = Control_L
+
+! Use Henkan Mode as Right Control
+keycode 100 = Control_R
+
+! Use Hiragana/Katakana as Left Alt
+keycode 101 = Alt_L
+
+! Use Backslash/underscore as Right Shift
+keycode 97 = Shift_R
+
+! Use Yen as Backspace
+keycode 132 = BackSpace
+
+! Restore defaults
+add control = Control_L Control_R
+add shift = Shift_L Shift_R
+add mod1 = Alt_L Meta_L

@@ -1,0 +1,10 @@
+[push]
+	default = simple
+[user]
+	name = funkdoctor
+	email = me@example.com
+[core]
+	editor = emacs --quick
+	pager = less -R
+[credential]
+	helper = cache --timeout=604800
