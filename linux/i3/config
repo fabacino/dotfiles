@@ -25,6 +25,7 @@ font pango:DejaVu Sans Mono 8
 
 # Start applications
 exec emacs --daemon
+exec ibus-daemon -drx
 exec thunar --daemon
 
 # Use left-handed mouse
