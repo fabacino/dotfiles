@@ -4,7 +4,7 @@
 	name = funkdoctor
 	email = me@example.com
 [core]
-	editor = emacs --quick
+	editor = emacsclient -c
 	pager = less -R
 [credential]
 	helper = cache --timeout=604800

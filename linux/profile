@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export EDITOR=emacs
+export EDITOR="emacsclient -c"
 export TERMINAL=xfce4-terminal
 CDPATH=$CDPATH:/mnt/
 
