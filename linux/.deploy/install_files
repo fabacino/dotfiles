@@ -1,0 +1,51 @@
+#!/bin/bash
+#
+# Copy config files to their correct location
+#
+
+# These paths are relative to the Makefile
+location_file="linux/.deploy/file_locations"
+data_dir="linux/"
+
+# Home directory must be passed as argument since this script is
+# called with sudo. $HOME would be expanded to /root otherwise.
+if [ $# -ne 1 ]
+then
+    echo "Home directory must be given as argument"
+    exit 1
+fi
+home_dir="$1"
+
+# Process files
+while read line
+do
+    # Skip comments and empty lines
+    if [ "${line:0:1}" == '#' ] || [ ${#line} -eq 0 ]
+    then
+       continue
+    fi
+    
+    # Do tilde expansion on destination file
+    src_file=`echo "$line" | awk -F' ;; ' '{ print $1 }'`
+    dest_file=`echo "$line" | awk -F' ;; ' '{ print $2 }'`
+    src_file="$data_dir$src_file"
+    if [ "${dest_file:0:2}" == "~/" ]
+    then
+        dest_file="$home_dir/${dest_file:2}"
+    fi
+    dest_dir=`dirname "$dest_file"`
+    
+    # Create missing directories if necessary
+    if [ ! -e "$dest_dir" ]
+    then
+        echo "Creating $dest_dir"
+        mkdir -p "$dest_dir"
+    fi
+    
+    # Copy file/directory to destination
+    echo "Copying $src_file to $dest_file"
+    cp -aT "$src_file" "$dest_file"
+    
+done < "$location_file"
+
+exit 0
