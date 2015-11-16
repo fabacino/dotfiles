@@ -1,13 +1,10 @@
-.PHONY: check install win/check win/install
+.PHONY: update install win/install
 
-check:
-	linux/.deploy/check_files.py
+update:
+	git pull
 
 install:
-	sudo linux/.deploy/install_files "${HOME}"
-
-win/check:
-	echo 'Not implemented'
+	zsh install.zsh
 
 win/install:
 	echo 'Not implemented'
