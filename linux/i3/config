@@ -107,10 +107,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+p focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+n focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -203,7 +203,7 @@ mode "focused" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+n mode "focused"
+bindsym $mod+m mode "focused"
 
 # no floating for xfreerdp
 for_window [class="xfreerdp"] floating disable
