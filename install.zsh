@@ -20,5 +20,6 @@ ln -sT "$data_dir/i3" "$home_dir/.i3"
 # Partial directories
 mkdir -p "$home_dir/.config/Terminal"
 ln -s "$data_dir/config/terminalrc" "$home_dir/.config/Terminal/terminalrc"
+ln -s "$data_dir/config/zathurarc" "$home_dir/.config/zathura/zathurarc"
 
 exit 0
