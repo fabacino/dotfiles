@@ -33,7 +33,7 @@ exec xmodmap -e "pointer = 3 2 1 "
 
 # Shortcuts
 bindsym $mod+F3 exec xfce4-appfinder
-bindsym $mod+F5 exec emacsclient -c
+bindsym $mod+F5 exec emacsclient -c -a ''
 bindsym $mod+F9 exec amixer set Master playback 3dB-
 bindsym $mod+F10 exec amixer set Master playback 3dB+
 bindsym $mod+F11 exec amixer set Master toggle
