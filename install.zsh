@@ -10,7 +10,7 @@ data_dir="$home_dir/.dotfiles/linux"
 ln -s "$data_dir/gitconfig" "$home_dir/.gitconfig"
 ln -s "$data_dir/i3status.conf" "$home_dir/.i3status.conf"
 ln -s "$data_dir/xinitrc" "$home_dir/.xinitrc"
-ln -s "$data_dir/Xmodmap" "$home_dir/.Xmodmap"
+#ln -s "$data_dir/Xmodmap" "$home_dir/.Xmodmap"
 ln -s "$data_dir/Xresources" "$home_dir/.Xresources"
 #ln -s "$data_dir/keymap.kmap" "/usr/local/share/keys/keymap.kmap"
 
