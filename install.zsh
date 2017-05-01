@@ -3,7 +3,7 @@
 #
 
 home_dir="${ZDOTDIR:-$HOME}"
-data_dir="$home_dir/.dotfiles/runcoms"
+data_dir="$(cd "$(dirname "$0")" && pwd -P)/runcoms"
 
 # Simple files
 ln -s "$data_dir/gitconfig" "$home_dir/.gitconfig"
