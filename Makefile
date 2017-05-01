@@ -1,4 +1,4 @@
-.PHONY: update install clean
+.PHONY: update install clean test
 
 update:
 	git pull
@@ -8,3 +8,6 @@ install:
 
 clean:
 	zsh uninstall.zsh
+
+test:
+	zsh test.zsh
