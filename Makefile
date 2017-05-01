@@ -1,10 +1,7 @@
-.PHONY: update install win/install
+.PHONY: update install
 
 update:
 	git pull
 
 install:
 	zsh install.zsh
-
-win/install:
-	echo 'Not implemented'

@@ -1,10 +1,9 @@
-#!/bin/zsh
 #
-# Create symlinks to config files
+# Install configuration files.
 #
 
 home_dir="${ZDOTDIR:-$HOME}"
-data_dir="$home_dir/.dotfiles/linux"
+data_dir="$home_dir/.dotfiles/runcoms"
 
 # Simple files
 ln -s "$data_dir/gitconfig" "$home_dir/.gitconfig"
