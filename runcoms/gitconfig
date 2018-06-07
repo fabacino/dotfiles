@@ -1,10 +1,11 @@
 [push]
 	default = simple
 [user]
-	name = funkdoctor
-	email = me@example.com
+	name = fabacino
+	email = fabacino@gmail.com
 [core]
 	editor = emacsclient -c
 	pager = less -R
+	excludesfile = ~/.gitignore_global
 [credential]
 	helper = cache --timeout=604800

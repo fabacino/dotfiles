@@ -6,6 +6,7 @@ home_dir="${ZDOTDIR:-$HOME}"
 
 # Simple files
 rm "$home_dir/.gitconfig"
+rm "$home_dir/.gitignore_global"
 rm "$home_dir/.i3status.conf"
 rm "$home_dir/.xinitrc"
 #rm "$home_dir/.Xmodmap"

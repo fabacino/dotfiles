@@ -7,6 +7,7 @@ data_dir="$(cd "$(dirname "$0")" && pwd -P)/runcoms"
 
 # Simple files
 echo "$data_dir/gitconfig => $home_dir/.gitconfig"
+echo "$data_dir/gitignore_global => $home_dir/.gitignore_global"
 echo "$data_dir/i3status.conf => $home_dir/.i3status.conf"
 echo "$data_dir/xinitrc => $home_dir/.xinitrc"
 #echo "$data_dir/Xmodmap => $home_dir/.Xmodmap"
