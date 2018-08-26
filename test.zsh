@@ -13,6 +13,7 @@ echo "$data_dir/xinitrc => $home_dir/.xinitrc"
 #echo "$data_dir/Xmodmap => $home_dir/.Xmodmap"
 echo "$data_dir/Xresources => $home_dir/.Xresources"
 #echo "$data_dir/keymap.kmap => /usr/local/share/keys/keymap.kmap"
+echo "$data_dir/config/redshift.conf => $home_dir/.config/redshift.conf"
 
 # Full directories
 echo "$data_dir/i3 => $home_dir/.i3"

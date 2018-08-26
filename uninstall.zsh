@@ -12,6 +12,7 @@ rm "$home_dir/.xinitrc"
 #rm "$home_dir/.Xmodmap"
 rm "$home_dir/.Xresources"
 #rm "/usr/local/share/keys/keymap.kmap"
+rm "$home_dir/.config/redshift.conf"
 
 # Full directories
 rm -rf "$home_dir/.i3"

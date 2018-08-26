@@ -13,6 +13,7 @@ ln -s "$data_dir/xinitrc" "$home_dir/.xinitrc"
 #ln -s "$data_dir/Xmodmap" "$home_dir/.Xmodmap"
 ln -s "$data_dir/Xresources" "$home_dir/.Xresources"
 #ln -s "$data_dir/keymap.kmap" "/usr/local/share/keys/keymap.kmap"
+ln -s "$data_dir/config/redshift.conf" "$home_dir/.config/redshift.conf"
 
 # Full directories
 ln -sT "$data_dir/i3" "$home_dir/.i3"
